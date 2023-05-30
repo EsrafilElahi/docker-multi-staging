@@ -18,7 +18,7 @@ RUN yarn next build
 # COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Static build
-COPY --from=builder /app/.next /usr/share/nginx/html/
+COPY --from=builder /app/build /usr/share/nginx/html/
 
 # Default port exposure
 EXPOSE 80
