@@ -1,8 +1,7 @@
-
 version: '3.8'
 
 services:
-  web:
+  dev:
     build:
       context: .
       target: runner
@@ -13,3 +12,15 @@ services:
       - "3000:3000"
     environment:
       NODE_ENV: development
+
+  prod:
+    build:
+      context: .
+      target: runner
+    # volumes:
+    #   - .:/app
+    command: npm run dev
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
