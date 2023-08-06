@@ -5,7 +5,7 @@ WORKDIR /app
 
 # for cache and install deps
 COPY package.json package-lock.json ./
-# just install deps - not dev-deps
+# just install deps - not dev-deps 
 RUN  npm install --production
 
 
