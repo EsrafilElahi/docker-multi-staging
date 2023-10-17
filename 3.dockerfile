@@ -23,7 +23,7 @@ COPY . .
 
 RUN npm run build
 
-# ======================================== Stage 3: run after build
+# ======================================== Stage 3: run after build 
 FROM node:17-alpine as runner
 
 WORKDIR /app
