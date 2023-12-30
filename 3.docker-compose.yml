@@ -3,7 +3,7 @@ version: '3.8'
 services:
   app-prod: 
     build:
-      context: .
+      context: . 
       args:
         - NODE_ENV=production
     ports:
