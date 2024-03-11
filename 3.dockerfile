@@ -7,7 +7,7 @@ COPY package*.json .
 
 ARG NODE_ENV
 ENV NODE_ENV $NODE_ENV
-
+ 
 RUN npm install --loglevel verbose
 
 # ======================================== Stage 2: build
