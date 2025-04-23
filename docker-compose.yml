@@ -19,7 +19,7 @@ services:
       target: runner
     # volumes:
     #   - .:/app
-    command: npm run dev
+    command: npm start
     ports:
       - "3000:3000"
     environment:
